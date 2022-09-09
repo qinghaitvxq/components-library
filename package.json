@@ -2,7 +2,7 @@
   "name": "components-library",
   "version": "1.0.1",
   "description": "business library",
-  "main": "./src/components/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack ",
     "serve": "webpack serve"
