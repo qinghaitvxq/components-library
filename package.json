@@ -1,6 +1,6 @@
 {
-  "name": "components-library",
-  "version": "1.0.1",
+  "name": "mercy-components-library",
+  "version": "0.0.1",
   "description": "business library",
   "main": "dist/index.js",
   "scripts": {
