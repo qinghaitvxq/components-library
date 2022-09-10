@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SearchInput, Button } from "./components";
 import "./app.scss";
+import { title } from "./info";
 
 const App = () => {
   const [count, setCount] = useState(-1);
@@ -18,6 +19,7 @@ const App = () => {
   };
   return (
     <div id="container">
+      {title}
       <SearchInput onSearch={onSearch} />
       <Button>测试</Button>
     </div>

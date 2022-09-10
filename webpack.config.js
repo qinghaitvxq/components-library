@@ -6,7 +6,6 @@ const { resolve } = require("path");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const EsmWebpackPlugin = require("@purtuga/esm-webpack-plugin");
 
 const devMode = process.env.NODE_ENV !== "production";
 
@@ -33,8 +32,6 @@ module.exports = {
     filename: "[name].js",
     // filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    library: "MERCY",
-    libraryTarget: "var",
   },
   module: {
     rules: [
@@ -77,7 +74,6 @@ module.exports = {
       generateStatsFile: true,
     }),
     new CleanWebpackPlugin(),
-    new EsmWebpackPlugin(),
   ],
   optimization: {
     splitChunks: {
