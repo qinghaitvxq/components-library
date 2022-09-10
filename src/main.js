@@ -1,7 +1,4 @@
-import sayHi from "./sayHi.js";
-import { title, title2 } from "./info";
 import Button from "./components/Button/index";
+import SearchInput from "./components/SearchInput/index.js";
 
-export default sayHi;
-
-export { title, title2, Button };
+export { Button, SearchInput };
