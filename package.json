@@ -2,7 +2,8 @@
   "name": "mercy-components-library",
   "version": "0.0.5",
   "description": "business library",
-  "main": "build/bundle.js",
+  "main": "build/lib-cjs.js",
+  "module": "build/lib-esm.js",
   "scripts": {
     "build": "NODE_ENV=production webpack ",
     "serve": "webpack serve",
@@ -44,5 +45,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@rollup/plugin-multi-entry": "^4.1.0",
+    "D": "^1.0.0"
+  }
 }

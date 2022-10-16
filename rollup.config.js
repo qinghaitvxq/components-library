@@ -26,14 +26,26 @@ export default {
     nodeResolve(),
     commonjs(),
   ],
-  output: {
-    file: "build/bundle.js",
-    format: "esm",
-    plugins: [
-      getBabelOutputPlugin({
-        presets: ["@babel/preset-env"],
-      }),
-    ],
-  },
+  output: [
+    {
+      // file: "build/bundle.js",
+      file: "build/lib-esm.js",
+      format: "esm",
+      plugins: [
+        getBabelOutputPlugin({
+          presets: ["@babel/preset-env"],
+        }),
+      ],
+    },
+    {
+      file: "build/lib-cjs.js",
+      format: "cjs",
+    },
+    {
+      file: "build/lib-umd.js",
+      format: "umd",
+      name: "mercy",
+    },
+  ],
   external: ["react", "react-dom"],
 };

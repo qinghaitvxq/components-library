@@ -41,7 +41,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$1 = "* {\n  box-sizing: border-box;\n}\n\n.index_btn__QMeUg {\n  background-color: #366cd6;\n  padding: 10px;\n  color: white;\n  border-radius: 10px;\n  border-style: none;\n}";
+var css_248z$1 = "* {\n  box-sizing: border-box;\n}\n\n.index_btn__QMeUg {\n  background-color: red;\n  padding: 10px;\n  color: white;\n  border-radius: 10px;\n  border-style: none;\n}";
 var styles$1 = {
   "btn": "index_btn__QMeUg"
 };
